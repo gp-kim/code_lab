@@ -2,7 +2,7 @@
 <!--- VERSION 01 --------------------------------------->
 <!------------------------------------------------------>
 
-<link type="text/css" rel="stylesheet" href="https://www.aht.li/3520162/py.css"/><link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300;1,400&display=swap" rel="stylesheet"><style>:root{--py-text: #fff;--py-font: 'Lato';--py-bg-title: #fff;--py-clr-title: #D6A265;--py-gradient: linear-gradient(310deg, #E1C08F 0%, rgba(255, 255, 255, 0) 100%);--py-img: url('https://tinyurl.com/y9fjecqy')}</style>
+<link type="text/css" rel="stylesheet" href="https://www.aht.li/3520162/py.css"/><link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300;1,400&display=swap" rel="stylesheet"><style>:root{--py-text: #fff;--py-font: 'Lato';--py-bg-title: #fff;--py-clr-title: #D6A265;--py-gradient: linear-gradient(310deg, #E1C08F /*couleur dégradé*/ 0%, rgba(255, 255, 255, 0) 100%);--py-img: url('https://tinyurl.com/y9fjecqy')}</style>
 
 <paleyellow><t>My love for you will be gone</t><t2>pale yellow</t2></paleyellow>
 
@@ -11,6 +11,6 @@
 <!--- VERSION 02 --------------------------------------->
 <!------------------------------------------------------>
 
-<link type="text/css" rel="stylesheet" href="https://www.aht.li/3520160/py2.css"/><link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300;1,400&display=swap" rel="stylesheet"><style>:root{--py2-text: #fff;--py2-font: 'Lato';--py2-bg-title: #fff;--py2-clr-title: #84A775;--py2-gradient: linear-gradient(120deg, #87A07A 10%, rgba(255, 255, 255, 0) 100%);--py2-img: url('https://tinyurl.com/ydxrl2cl')}</style>
+<link type="text/css" rel="stylesheet" href="https://www.aht.li/3520160/py2.css"/><link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300;1,400&display=swap" rel="stylesheet"><style>:root{--py2-text: #fff;--py2-font: 'Lato';--py2-bg-title: #fff;--py2-clr-title: #84A775;--py2-gradient: linear-gradient(120deg, #87A07A /*couleur dégradé*/ 10%, rgba(255, 255, 255, 0) 100%);--py2-img: url('https://tinyurl.com/ydxrl2cl')}</style>
 
 <paleyellow2><t>I will<br/>fix the pain on my own</t><t2>pale yellow</t2></paleyellow2>
