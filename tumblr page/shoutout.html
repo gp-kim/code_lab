@@ -1,0 +1,407 @@
+<!-- SHOUT OUT PAGE -->
+<!-- by CODE_LAB https://code-lab.tumblr.com/ -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Shout out page</title>
+
+    <!-- TYPO -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- FONT ICON -->
+    <!-- https://icons.getbootstrap.com/#icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    
+    
+<style>
+    
+ /* french tutoriel for ROOT:
+ https://code-lab.tumblr.com/post/634694343906689024/cssroot */
+ 
+ /* english recommendation : 
+ https://www.digitalocean.com/community/tutorials/css-root-pseudo-class */
+ 
+:root {
+    --light: #FFF;
+    --grey: #F4F4F4;
+    --greyer: #aaa;
+    --dark: #333;
+    --darker: #000;
+    --sm-radius: 5px;
+    --lg-radius: 15px;
+    --font: 'Open sans'
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: var(--grey);
+    font-family: var(--font);
+    font-size: 13px;
+    color: var(--dark);
+}
+
+a {
+    color: var(--darker);
+}
+
+a:hover {
+    color: var(--dark);
+}
+
+h1, .h1 {
+    font-size: 36px;
+}
+
+  
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* SIDE BAR */
+aside {
+    width: 400px;
+    padding: 60px;
+    flex-grow: 1;
+}
+
+aside div {
+    position: sticky;
+    top: 60px;
+}
+  
+
+/* ALL CARD CONTAINER **/
+section.grid {
+    padding: 60px;
+    flex-grow: 100;
+}
+
+/* CARD CONTAINER */
+article {
+    background: var(--light);
+    padding: 15px;
+    border-radius: var(--sm-radius);
+    width: 320px;
+    transform: scale(1);
+    transition: all 0.3s;
+    margin: 10px;
+}
+
+article:hover {
+    transform: scale(1.08);
+}
+
+
+article .arrow {
+    position: absolute;
+    right: 30px;
+    top: 15px;
+    font-size: 25px;
+    color: var(--dark);
+    opacity: 0;
+    transition: all 0.3s
+}
+
+article:hover .arrow {
+    right: 15px;
+    opacity: 1
+}
+
+
+
+
+/* -- INFORMATIONS CONTAINER --*/
+a.profil {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 16px;
+    transition: all 0.5s
+}
+
+/*-- AVATAR --*/
+img.avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: var(--sm-radius);
+    object-fit: cover;
+    object-position: center;
+    margin-right: 15px;
+}
+
+
+/* -- SITE'S NAME -- */
+.site {
+    line-height: 20px;
+    color: var(--greyer);
+}
+
+span.name {
+    color: var(--darker);
+    font-size: 18px;
+    font-weight: 600
+}
+
+
+
+
+
+/* -- DESCRIPTION --*/
+.description {
+    margin: 15px 0
+}
+
+
+/* -- TAGS --*/
+.tags {
+    margin-top: 15px;
+    line-height: 30px
+    
+}
+
+.tags a {
+    text-decoration: none;
+    color: var(--light);
+    border-radius: var(--lg-radius);
+    background: var(--dark);
+    padding: 2px 8px;
+    margin-right: 3px;
+}
+
+.tags a:hover {
+    background: var(--darker);
+}
+
+.tags a:last-of-type {
+    margin-right: 0;
+}
+    </style>
+</head>
+
+<body>
+    <main>
+        <aside>
+
+            <div>
+                <h1>
+                    <i class="bi bi-bookmark-heart"></i>
+                    Shout out
+                </h1>
+
+                <p>
+                    Tell us here which creator or site who deserve some support and to be discovered. It’s time to spread love and to be generous.
+                </p>
+                
+                <a href="">← back</a>
+
+
+            </div>
+        </aside>
+
+
+        <section class="grid" data-masonry='{"itemSelector": ".grid-item"}'>
+
+           <!-- SITE CARD HERE -->
+            <article class="grid-item">
+                <i class="bi bi-arrow-up-right-square-fill arrow"></i>
+
+                <a href="" class="profil" target="_blank">
+                    <img class="avatar" src="https://thumbs2.imgbox.com/3b/38/Rtbw0A4m_t.png" alt="" />
+
+                    <div class="site">
+                        Discover
+                        <br />
+                        <span class="name">Site name</span>
+                    </div>
+                </a>
+
+                <div class="description">
+                   Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light. Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves. Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light. Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.
+                </div>
+
+                <div class="tags">
+                    <a href="/tagged/YOUR TAG">edit</a>
+                    <a href="/tagged/YOUR TAG">ressources</a>
+                    <a href="/tagged/YOUR TAG">graphic</a>
+                </div>
+            </article>
+
+          
+           <!-- SITE CARD HERE -->
+            <article class="grid-item">
+                <i class="bi bi-arrow-up-right-square-fill arrow"></i>
+
+                <a href="" class="profil" target="_blank">
+                    <img class="avatar" src="https://images2.imgbox.com/3b/38/Rtbw0A4m_o.png" alt="" />
+
+                    <div class="site">
+                        The awesome
+                        <br />
+                        <span class="name">Site name</span>
+                        
+                        
+                    </div>
+                </a>
+
+                <div class="description">
+                    Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light. Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.
+                </div>
+
+                <div class="tags">
+                    <a href="/tagged/YOUR TAG">edit</a>
+                    <a href="/tagged/YOUR TAG">ressources</a>
+                    <a href="/tagged/YOUR TAG">graphic</a>
+                </div>
+            </article>
+
+           
+           <!-- SITE CARD HERE -->
+            <article class="grid-item">
+                <i class="bi bi-arrow-up-right-square-fill arrow"></i>
+
+                <a href="" class="profil" target="_blank">
+                    <img class="avatar" src="https://images2.imgbox.com/3b/38/Rtbw0A4m_o.png" alt="" />
+
+                    <div class="site">
+                        You must see
+                        <br />
+                        <span class="name">Site name</span>
+                    </div>
+                </a>
+
+                <div class="description">
+                    Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light. Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.
+                </div>
+
+                <div class="tags">
+                    <a href="/tagged/YOUR TAG">edit</a>
+                    <a href="/tagged/YOUR TAG">ressources</a>
+                    <a href="/tagged/YOUR TAG">graphic</a>
+                </div>
+            </article>
+
+           
+           <!-- SITE CARD HERE -->
+            <article class="grid-item">
+                <i class="bi bi-arrow-up-right-square-fill arrow"></i>
+
+                <a href="" class="profil" target="_blank">
+                    <img class="avatar" src="https://images2.imgbox.com/3b/38/Rtbw0A4m_o.png" alt="" />
+
+                    <div class="site">
+                        Check out
+                        <br />
+                        <span class="name">Site name</span>
+                    </div>
+                </a>
+
+                <div class="description">
+                    Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light. Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves. Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light. Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.
+                </div>
+
+                <div class="tags">
+                    <a href="/tagged/YOUR TAG">edit</a>
+                    <a href="/tagged/YOUR TAG">ressources</a>
+                    <a href="/tagged/YOUR TAG">graphic</a>
+                </div>
+            </article>
+
+           
+           <!-- SITE CARD HERE -->
+            <article class="grid-item">
+                <i class="bi bi-arrow-up-right-square-fill arrow"></i>
+
+                <a href="" class="profil" target="_blank">
+                    <img class="avatar" src="https://images2.imgbox.com/3b/38/Rtbw0A4m_o.png" alt="" />
+
+                    <div class="site">
+                        The awesome
+                        <br />
+                        <span class="name">Site name</span>
+                    </div>
+                </a>
+
+                <div class="description">
+                    Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light. Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.
+                </div>
+
+                <div class="tags">
+                    <a href="/tagged/YOUR TAG">edit</a>
+                    <a href="/tagged/YOUR TAG">ressources</a>
+                    <a href="/tagged/YOUR TAG">graphic</a>
+                </div>
+            </article>
+
+           
+           <!-- SITE CARD HERE -->
+            <article class="grid-item">
+                <i class="bi bi-arrow-up-right-square-fill arrow"></i>
+
+                <a href="" class="profil" target="_blank">
+                    <img class="avatar" src="https://images2.imgbox.com/3b/38/Rtbw0A4m_o.png" alt="" />
+
+                    <div class="site">
+                        You must see
+                        <br />
+                        <span class="name">Site name</span>
+                    </div>
+                </a>
+
+                <div class="description">
+                    Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves. Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light. Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.
+                </div>
+
+                <div class="tags">
+                    <a href="/tagged/YOUR TAG">edit</a>
+                    <a href="/tagged/YOUR TAG">ressources</a>
+                    <a href="/tagged/YOUR TAG">graphic</a>
+                </div>
+            </article>
+
+           
+           <!-- SITE CARD HERE -->
+            <article class="grid-item">
+                <i class="bi bi-arrow-up-right-square-fill arrow"></i>
+
+                <a href="" class="profil" target="_blank">
+                    <img class="avatar" src="https://images2.imgbox.com/3b/38/Rtbw0A4m_o.png" alt="" />
+
+                    <div class="site">
+                        Check out
+                        <br />
+                        <span class="name">Site name</span>
+                    </div>
+                </a>
+
+                <div class="description">
+                    Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light. Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.
+                </div>
+
+                <div class="tags">
+                    <a href="/tagged/YOUR TAG">edit</a>
+                    <a href="/tagged/YOUR TAG">ressources</a>
+                    <a href="/tagged/YOUR TAG">graphic</a>
+                </div>
+            </article>
+
+        </section>
+
+    </main>
+
+
+
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+</body>
+</html>
